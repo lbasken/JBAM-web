@@ -1,10 +1,6 @@
 import React from "react";
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import BasicAppBar from "./BasicAppBar";
-
 
 export default function App() {
 
@@ -18,6 +14,5 @@ export default function App() {
         Quasi non reprehenderit minus iusto dolorum repellat quidem voluptatem assumenda placeat odit sunt aliquid tempore reiciendis ut pariatur commodi expedita quaerat incidunt cumque, praesentium illo soluta. Delectus aperiam architecto a!
         Maxime fuga beatae necessitatibus corporis possimus dicta quisquam neque ipsam ipsa sapiente, tempore, reprehenderit dolorem dolorum sed, tenetur et doloremque animi quos ullam? Quisquam, suscipit assumenda? Nihil officiis commodi laudantium.</p>
       </section>
-      <section></section>
   </div>
 }

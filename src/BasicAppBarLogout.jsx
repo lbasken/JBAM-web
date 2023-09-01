@@ -1,12 +1,12 @@
 import React from "react";
 import {AppBar, Toolbar, IconButton, Typography, Button, Box} from '@mui/material';
 import {Menu} from "@mui/icons-material";
-import { getAuth, signOut } from "firebase/auth";
+import {signOut} from "firebase/auth";
+import Firebase from "./Firebase";
 
 export default function BasicAppBarLogout() {
     function googleSignOut() {
-        const auth = getAuth();
-        signOut(auth).then(() => {
+        signOut(Firebase.auth).then(() => {
         }).catch((error) => {
         });
     }
