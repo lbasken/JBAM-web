@@ -13,7 +13,7 @@ export default function SignInPage() {
         Firebase.ui.start(container, {
             signInOptions: [
                 {provider: GoogleAuthProvider.PROVIDER_ID, customParameters: {prompt: "select_account"}},
-                {provider: EmailAuthProvider.PROVIDER_ID, requireDisplayName: true, buttonColor: "blue"}
+                {provider: EmailAuthProvider.PROVIDER_ID, requireDisplayName: true, buttonColor: "olive"}
             ],
             signInFlow: "popup",
             callbacks: {
