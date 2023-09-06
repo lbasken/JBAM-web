@@ -1,6 +1,5 @@
 import {initializeApp} from "firebase/app";
 import {getAuth, onAuthStateChanged} from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
 import * as firebaseui from "firebaseui";
 
 export default class Firebase {
@@ -17,12 +16,10 @@ export default class Firebase {
 
     static app;
     static auth;
-    static db;
 
     static init() {
         Firebase.app = initializeApp(Firebase.firebaseConfig);
         Firebase.auth = getAuth(Firebase.app);
-        Firebase.db = getFirestore(Firebase.app);
         Firebase.ui = new firebaseui.auth.AuthUI(Firebase.auth)
         onAuthStateChanged(Firebase.auth, (user) => {
             console.log(user);
