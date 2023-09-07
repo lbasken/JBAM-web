@@ -1,3 +1,9 @@
 #composition-button {
-    background-color: white;
+    background-color: olive;
+    color: white;
+}
+
+#composition-menu {
+    background-color: #242424;
+    border-radius: 3px;
 }
