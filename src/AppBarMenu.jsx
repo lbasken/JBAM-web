@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import "./AppBarMenu.css";
 import Button from '@mui/material/Button';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
@@ -80,9 +81,9 @@ export default function AppBarMenu() {
                                         aria-labelledby="composition-button"
                                         onKeyDown={handleListKeyDown}
                                     >
-                                        <MenuItem onClick={handleClose}><a href="https://justbirdsandmore.com">Home</a></MenuItem>
-                                        <MenuItem onClick={handleClose}><a href="https://justbirdsandmore.com/birds">Just Birds</a></MenuItem>
-                                        <MenuItem onClick={handleClose}><a href="https://justbirdsandmore.com/andmore">... And More</a></MenuItem>
+                                        <MenuItem onClick={handleClose}><Link to="/">Home</Link></MenuItem>
+                                        <MenuItem onClick={handleClose}><Link to="/birds">Just Birds</Link></MenuItem>
+                                        <MenuItem onClick={handleClose}><Link to="/andmore">... And More</Link></MenuItem>
                                     </MenuList>
                                 </ClickAwayListener>
                             </Paper>
