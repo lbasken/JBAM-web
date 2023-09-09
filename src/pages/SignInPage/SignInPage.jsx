@@ -29,7 +29,7 @@ export default function SignInPage() {
     return <div className="sign-in-page">
         <img
             className="chickadee-logo"
-            src="src/assets/images/chickadee.svg"
+            src="https://freesvg.org/img/papapishu-black-capped-chickadee.png"
             alt="chickadee logo"
         />
         <h1>Just Birds And More</h1>

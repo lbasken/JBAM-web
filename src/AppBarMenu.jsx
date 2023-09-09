@@ -83,6 +83,7 @@ export default function AppBarMenu() {
                                         onKeyDown={handleListKeyDown}
                                     >
                                         <MenuItem onClick={handleClose}><Link to="/">Home</Link></MenuItem>
+                                        <MenuItem onClick={handleClose}><Link to="/about">About</Link></MenuItem>
                                         <MenuItem onClick={handleClose}><Link to="/birds">Just Birds</Link></MenuItem>
                                         <MenuItem onClick={handleClose}><Link to="/andmore">... And More</Link></MenuItem>
                                     </MenuList>

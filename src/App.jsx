@@ -3,6 +3,7 @@ import './App.css'
 import BasicAppBar from "./BasicAppBar";
 import HomePage from "./pages/HomePage/HomePage.jsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import AboutPage from "./pages/AboutPage/AboutPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.jsx";
 import useAuth from "./hooks/useAuth.js";
 import SignInPage from "./pages/SignInPage/SignInPage.jsx";
@@ -21,6 +22,7 @@ export default function App() {
         <BasicAppBar/>
         <Routes>
             <Route path="/" element={<HomePage />}/>
+            <Route path="/about" element={<AboutPage />}/>
             <Route path="/birds" element={<BirdDBPage />}/>
             <Route path="/andmore" element={<AndMoreDBPage />}/>
             <Route path="*" element={<NotFoundPage />}/>
