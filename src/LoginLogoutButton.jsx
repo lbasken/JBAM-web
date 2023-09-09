@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import {Button} from "@mui/material";
 import {GoogleAuthProvider, signInWithPopup, signOut} from "firebase/auth";
 import Firebase from "./Firebase.js";
@@ -27,8 +28,8 @@ export default function LoginLogoutButton() {
     }
 
     if (user) {
-        return <Button onClick={googleSignOut} color="inherit">Logout</Button>;
+        return <Button id="login-logout" onClick={googleSignOut} color="inherit">Logout</Button>;
     } else {
-        return <Button onClick={signInWithGoogle} color="inherit">Login</Button>;
+        return <Button id="login-logout" onClick={signInWithGoogle} color="inherit">Login</Button>;
     }
 }

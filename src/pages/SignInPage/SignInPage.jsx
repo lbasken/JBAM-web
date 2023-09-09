@@ -28,7 +28,7 @@ export default function SignInPage() {
 
     return <div className="sign-in-page">
         <h1>Just Birds And More</h1>
-        <h2>A New England Nature Database</h2>
+        <h2>New England Nature Database</h2>
         <div ref={ref => setContainer(ref)} />
     </div>
 

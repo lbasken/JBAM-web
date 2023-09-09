@@ -1,3 +1,4 @@
+import "./index.css";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -13,7 +14,7 @@ export default function MediaCard(props) {
                 title="cute bird"
             />
             <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography id="media-title" gutterBottom variant="h5" component="div">
                     {props.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">

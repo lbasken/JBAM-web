@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "Teko";
+    src: url("assets/fonts/Teko/Teko-Regular.ttf");
+}
+
 #composition-button {
     background-color: olive;
     color: white;
+    font-family: Teko, sans-serif;
+    font-size: 20px;
 }
 
 #composition-menu {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./BasicAppBar.css"
+import "./index.css";
 import {AppBar, Toolbar, Typography, Box} from '@mui/material';
 import LoginLogoutButton from "./LoginLogoutButton.jsx";
 import AppBarMenu from "./AppBarMenu.jsx";
@@ -9,7 +9,7 @@ export default function BasicAppBar() {
         <AppBar>
             <Toolbar id="toolbar">
                 <AppBarMenu />
-                <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
+                <Typography id="typography" variant="h6" component="div" sx={{flexGrow: 1}}>
                     Just Birds And More
                 </Typography>
                 <LoginLogoutButton/>
