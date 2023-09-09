@@ -1,18 +1,22 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import MediaCard from "../../MediaCard.jsx";
 
 export default function AndMoreDBPage() {
+
+    const [andmore, setAndMore] = useState([]);
+
+    useEffect(() => {
+        fetch("https://api-7xmcazxjaa-uc.a.run.app/and-more")
+            .then(response => response.json())
+            .then(items => {
+                setAndMore(items);
+            });
+    }, []);
+
     return <div>
         <h3>... And More</h3>
-        <section id="birds">
-            <MediaCard image="https://www.umass.edu/sites/default/files/styles/large/public/legacy/inline-images/liatris_spicata_1.jpg?itok=n5GpJuoR" name="Cool Plant 1" summary="This is a summary." link="https://www.wikipedia.org/" />
-            <MediaCard image="https://www.greenhousegrower.com/wp-content/uploads/2012/05/35094.jpg" name="Cool Plant 2" summary="This is another summary." link="https://www.wikipedia.org/"/>
-            <MediaCard />
-            <MediaCard />
-            <MediaCard />
-            <MediaCard />
-            <MediaCard />
-            <MediaCard />
+        <section id="card">
+            {andmore.map(andmore => <MediaCard key={`andmore_${andmore.name}`} image={andmore.image} name={andmore.name} summary={andmore.summary} info= {andmore.info} />)}
         </section>
     </div>
 }
