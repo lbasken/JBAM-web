@@ -6,8 +6,8 @@ export default function BirdDBPage() {
     return <div>
         <h3>Just Birds</h3>
         <section id="birds">
-            <MediaCard name="Cute Bird 1" />
-            <MediaCard name="Cute Bird 2" />
+            <MediaCard image="https://www.allaboutbirds.org/guide/assets/photo/302473191-480px.jpg" name="Cute Bird 1" summary="This is a summary." link="https://www.wikipedia.org/" />
+            <MediaCard image="https://images.saymedia-content.com/.image/t_share/MTc0NDczNTcwNjI4NDEyNzc2/common-types-of-backyard-birds-in-the-northeast.jpg" name="Cute Bird 2" summary="This is another summary." link="https://www.wikipedia.org/"/>
             <MediaCard />
             <MediaCard />
             <MediaCard />
@@ -15,6 +15,5 @@ export default function BirdDBPage() {
             <MediaCard />
             <MediaCard />
         </section>
-
     </div>
 }

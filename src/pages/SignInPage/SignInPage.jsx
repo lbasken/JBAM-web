@@ -27,6 +27,11 @@ export default function SignInPage() {
     }
 
     return <div className="sign-in-page">
+        <img
+            className="chickadee-logo"
+            src="src/assets/images/chickadee.svg"
+            alt="chickadee logo"
+        />
         <h1>Just Birds And More</h1>
         <h2>New England Nature Database</h2>
         <div ref={ref => setContainer(ref)} />

@@ -10,7 +10,7 @@ export default function MediaCard(props) {
         <Card sx={{ maxWidth: 345 }}>
             <CardMedia
                 sx={{ height: 140 }}
-                image="https://i.ytimg.com/vi/MjEaniGTrx0/maxresdefault.jpg"
+                image={props.image}
                 title="cute bird"
             />
             <CardContent>
@@ -18,11 +18,11 @@ export default function MediaCard(props) {
                     {props.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    This is a very, very cute bird.
+                    {props.summary}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small"><a href="https://www.wikipedia.org/">Learn More</a></Button>
+                <Button size="small"><a href={props.link}>Learn More</a></Button>
             </CardActions>
         </Card>
     );
