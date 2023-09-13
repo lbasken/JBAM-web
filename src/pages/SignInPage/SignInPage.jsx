@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Firebase from "../../Firebase.js";
 import {GoogleAuthProvider, EmailAuthProvider} from "firebase/auth";
+import ChickadeeImage from "/src/assets/images/chickadee.svg";
 import "./SignInPage.css";
 import "firebaseui/dist/firebaseui.css";
 
@@ -29,7 +30,7 @@ export default function SignInPage() {
     return <div className="sign-in-page">
         <img
             className="chickadee-logo"
-            src="https://freesvg.org/img/papapishu-black-capped-chickadee.png"
+            src={ChickadeeImage}
             alt="chickadee logo"
         />
         <h1>Just Birds And More</h1>
