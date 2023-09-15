@@ -17,10 +17,10 @@ export default function AndMoreDBPage() {
             });
     }, []);
 
-    if(show === true){
+    if(show){
         return (
             <Box sx={{ display: 'flex' }}>
-                <CircularProgress />
+                <CircularProgress color="inherit" />
             </Box>
         );    }
 

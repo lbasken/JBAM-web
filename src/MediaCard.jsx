@@ -1,4 +1,5 @@
 import "./index.css";
+import "./MediaCard.css";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -9,7 +10,7 @@ export default function MediaCard(props) {
 
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card className="media-card" sx={{ maxWidth: 345 }}>
             <CardMedia
                 sx={{ height: 140 }}
                 image={props.image}
@@ -19,11 +20,11 @@ export default function MediaCard(props) {
                 <Typography id="media-title" gutterBottom variant="h5" component="div">
                     {props.name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography id="media-summary" variant="body2" color="text.secondary">
                     {props.summary}
                 </Typography>
             </CardContent>
-            <CardActions>
+            <CardActions className="media-button">
                 <Button size="small"><a href={props.info}>Learn More</a></Button>
             </CardActions>
         </Card>

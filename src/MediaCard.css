@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Teko";
+    src: url("assets/fonts/Teko/Teko-Regular.ttf");
+}
+
+.media-card {
+    #media-title{
+        font-family: Teko, sans-serif;
+    }
+    #media-summary {
+        font-family: Teko, sans-serif;
+    }
+    .media-button {
+        font-family: Teko, sans-serif;
+
+    }
+}
+
+.media-button a {
+    color: black;
+}
