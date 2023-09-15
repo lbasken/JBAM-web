@@ -12,7 +12,7 @@ export default function MediaCard(props) {
     return (
         <Card className="media-card" sx={{ maxWidth: 345 }}>
             <CardMedia
-                sx={{ height: 300 }}
+                sx={{ aspectRatio: "1.5" }}
                 image={props.image}
                 title={props.name}
             />
