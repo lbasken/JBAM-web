@@ -10,6 +10,10 @@
     font-size: 20px;
 }
 
+#composition-button:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
 #composition-menu {
     background-color: #242424;
     border-radius: 3px;

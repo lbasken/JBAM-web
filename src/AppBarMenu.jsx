@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./AppBarMenu.css";
 import "./index.css";
 import Button from '@mui/material/Button';
+import MenuIcon from '@mui/icons-material/Menu';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import Grow from '@mui/material/Grow';
 import Paper from '@mui/material/Paper';
@@ -56,7 +57,7 @@ export default function AppBarMenu() {
                     aria-haspopup="true"
                     onClick={handleToggle}
                 >
-                    Menu
+                    <MenuIcon />
                 </Button>
                 <Popper
                     open={open}

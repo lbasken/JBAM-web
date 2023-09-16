@@ -4,13 +4,10 @@
     padding-bottom: 100px;
 
     .chickadee-logo {
-        /*width: 200px;*/
-        /*text-align: center;*/
-        /*padding-right: 550px;*/
-        width: 200px;
+        width: 13%;
         position: absolute;
-        top: 60px;
-        left: 370px;
+        top: 11%;
+        left: 26%;
     }
 }
 
