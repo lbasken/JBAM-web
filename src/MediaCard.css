@@ -4,6 +4,10 @@
 }
 
 .media-card {
+
+    display: flex;
+    flex-direction: column;
+
     #media-title{
         font-family: Teko, sans-serif;
     }
@@ -12,8 +16,12 @@
     }
     .media-button {
         font-family: Teko, sans-serif;
-
     }
+
+    .media-card-content {
+        flex-grow: 1;
+    }
+
 }
 
 .media-button a {
