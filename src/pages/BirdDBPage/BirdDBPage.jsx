@@ -28,7 +28,7 @@ export default function BirdDBPage() {
     return <div>
         <h3>Just Birds</h3>
         <section id="card">
-            {birds.map(bird => <MediaCard key={`bird_${bird.name}`} image={bird.image} name={bird.name} summary={bird.summary} info= {bird.info} />)}
+            {birds.map(bird => <MediaCard key={`bird_${bird.name}`} image={bird.image} name={bird.name} summary={bird.summary} info= {bird.info} aab={bird.aab} />)}
         </section>
     </div>
 }

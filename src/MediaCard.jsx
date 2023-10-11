@@ -25,7 +25,8 @@ export default function MediaCard(props) {
                 </Typography>
             </CardContent>
             <CardActions className="media-button">
-                <Button size="small"><a href={props.info}>Learn More</a></Button>
+                <Button size="small"><a href={props.info}>Wikipedia</a></Button>
+                <Button size="small"><a href={props.aab}>All About Birds</a></Button>
             </CardActions>
         </Card>
     );
