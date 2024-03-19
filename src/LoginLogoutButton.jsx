@@ -13,8 +13,7 @@ export default function LoginLogoutButton() {
         const provider = new GoogleAuthProvider();
         signInWithPopup(Firebase.auth, provider)
             .then(() => {
-            })
-            .catch((error) => {
+            }).catch((error) => {
                 console.error(error);
             });
     }
